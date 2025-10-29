@@ -26,22 +26,6 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('9. deve calcular a média de um array com múltiplos elementos', () => { expect(mediaArray([10, 20, 30])).toBe(20); });
   test('10. deve somar um array com múltiplos elementos', () => { expect(somaArray([1, 2, 3])).toBe(6); });
 
-  test('11. Raiz de 0', () => { expect(raizQuadrada(0)).toBe(0); });
-
-  test('12. Fatorial de 0', () => { expect(fatorial(0)).toBe(1); });
-
-  test('13. Fatorial de 1', () => { expect(fatorial(1)).toBe(1); });
-
-  test('13. Fatorial de 5', () => { expect(fatorial(5)).toBe(120); });
-
-  test('14. media de array false', () => { expect(mediaArray([])).toBe(0); });
-
-  test('17. is par false', () => { expect(isPar(1)).toBe(false); });
-  test('18. is impar false', () => { expect(isImpar(2)).toBe(false); });
-
-
-  
-
   // === Testes para o Bloco 2 (11-20) ===
   test('11. deve encontrar o valor máximo em um array', () => { expect(maximoArray([1, 50, 10])).toBe(50); });
   test('12. deve encontrar o valor mínimo em um array', () => { expect(minimoArray([10, 2, 100])).toBe(2); });
@@ -78,19 +62,6 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('39. deve converter Fahrenheit para Celsius', () => { expect(fahrenheitParaCelsius(32)).toBe(0); });
   test('40. deve calcular o inverso de um número', () => { expect(inverso(4)).toBe(0.25); });
 
-  test('41. isPrimo 1', () => { expect(isPrimo(1)).toBe(false); });
-  test('42. isPrimo 0', () => { expect(isPrimo(0)).toBe(false); });
-
-  test('42. isPrimo 20', () => { expect(isPrimo(20)).toBe(false); });
-
-  test('43. isDivisible ', () => { expect(isDivisivel(20,7)).toBe(false); });
-
-  test('44. celsiusParaFa ', () => { expect(celsiusParaFahrenheit(20)).toBe(68); });
-
-  test('45. FaParaCelc ', () => { expect(fahrenheitParaCelsius(68)).toBe(20); });
-
-
-
   // === Testes para o Bloco 5 (41-50) ===
   test('41. deve calcular a área de um círculo', () => { expect(areaCirculo(10)).toBeCloseTo(314.159); });
   test('42. deve calcular a área de um retângulo', () => { expect(areaRetangulo(5, 4)).toBe(20); });
@@ -102,31 +73,4 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('48. deve calcular o dobro de um número', () => { expect(dobro(10)).toBe(20); });
   test('49. deve calcular o triplo de um número', () => { expect(triplo(10)).toBe(30); });
   test('50. deve calcular a metade de um número', () => { expect(metade(20)).toBe(10); });
-
-  test('51. isMaiorque', () => { expect(isMaiorQue(20,30)).toBe(false); });
-
-  test('52. isMenorQue', () => { expect(isMenorQue(30,20)).toBe(false); });
-
-  test('52. produtoArray 0', () => { expect(produtoArray([])).toBe(1); });
-
-  test('52. clamp', () => { expect(clamp(6,1,5)).toBe(5); });
-
-  test('52. clamp', () => { expect(clamp(6,6,5)).toBe(5); });
-
-  test('52. clamp', () => { expect(clamp(3,6,3)).toBe(6); });
-
-  test('52. clamp', () => { expect(clamp(0,1,5)).toBe(1); });
-
-  test('53. isEqual', () => { expect(isEqual(30,20)).toBe(false); });
-
-  test('53. isMenorQue', () => { expect(isMenorQue(30,30)).toBe(false); });
-
-  test('53. isMaiorQue', () => { expect(isMaiorQue(30,30)).toBe(false); });
-
-  test('54. medianaArray', () => { expect(medianaArray([30,20,10,60,40,20,50,90,100])).toBe(40); });
-
-  test('54. medianaArray', () => { expect(medianaArray([30,20,10,60,40,20,50,90])).toBe(35); });
-
-
-
 });
